@@ -8,4 +8,7 @@ final class SwiftPackageLibrarySample01Tests: XCTestCase {
         // results.
         XCTAssertEqual(SwiftPackageLibrarySample01().text, "Hello, World!")
     }
+    func testGreeting() throws {
+        XCTAssertEqual(SwiftPackageLibrarySample01().greeting(), "Hello, World!")
+    }
 }
